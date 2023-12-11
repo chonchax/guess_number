@@ -1,0 +1,211 @@
+:root {
+  --app-bg: #141726;
+  --card: #182449;
+  --component-hover: #1d2e62;
+  --component-active: #253974;
+  --btn: #3e63dd;
+  --hover-btn: #5472e4;
+  --border-ring: #435db1;
+  --text-shadow: #d6e1ff;
+  --text: #141726;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  overflow: hidden;
+  background-image: url(./images/fond.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.home {
+  max-height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oswald";
+  text-shadow: 1px 1px 2px var(--text-shadow);
+}
+
+#start-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+.start-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1400px;
+}
+.start-info p {
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: var(--text);
+  font-family: "Oswald";
+  margin: 0 auto;
+}
+#start {
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background: var(--btn);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+  font-family: "Oswald";
+  transition: all 0.3s ease-in-out;
+}
+#start:hover {
+  background: var(--hover-btn);
+  color: var(--text-shadow);
+}
+#game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 80%;
+  gap: 4rem;
+  width: 1400px;
+  display: none;
+}
+.game-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50%;
+}
+.game-info p {
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: var(--text);
+  font-family: "Oswald";
+  line-height: 20px;
+}
+.game-info span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  font-family: "Oswald";
+}
+.game-input {
+  margin: 0 auto;
+  width: 50%;
+  gap: 3rem;
+}
+label[for="guess"] {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text);
+  font-family: "Oswald";
+}
+.guess-submit {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  gap: 1rem;
+}
+#guess-input {
+  height: 15px;
+  border-radius: 10px;
+  border: 0.5px solid var(--border-ring);
+  padding: 15px 8px;
+  background: var(--card);
+  color: var(--text-shadow);
+  font-size: 1.5rem;
+}
+#guess-input:focus {
+  outline: none;
+  border: 1px solid var(--component-active);
+}
+#btn-submit {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background: var(--btn);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+  font-family: "Oswald";
+  transition: all 0.3s ease-in-out;
+}
+#btn-submit:hover {
+  background: var(--hover-btn);
+  color: var(--text-shadow);
+}
+.message {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 20px 0 0 0px;
+  text-shadow: 1px 1px 2px var(--text-shadow);
+  text-align: center;
+}
+.game-results {
+  position: relative;
+  height: 20px;
+  border: 1px solid var(--border-ring);
+  margin: 40px 0 0 0;
+  border-radius: 10px;
+  width: 98%;
+  display: flex;
+  padding: 15px 8px;
+  background: var(--card);
+  overflow: hidden;
+}
+.emoticon {
+  position: absolute;
+  width: 20px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.range {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text);
+  font-size: 1.2rem;
+}
+#restart {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background: var(--btn);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+  font-family: "Oswald";
+  transition: all 0.3s ease-in-out;
+}
+#restart:hover {
+  background: var(--hover-btn);
+  color: var(--text-shadow);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="home">
+      <div class="header">
+        <h1>Welcome To The Guess Number Game</h1>
+      </div>
+      <div id="start-container">
+        <div class="start-info">
+          <p>
+            The application will generate a radom number, your task if you
+            accept it, is to find it in as few attemps as possible
+          </p>
+          <button id="start">Start</button>
+        </div>
+      </div>
+
+      <div id="game-container">
+        <div class="game-info">
+          <p>I generated a number between 0 and 500, try to guess it</p>
+          <span class="attempts">Attempt(s) :</span>
+        </div>
+        <div class="game-input">
+          <form id="guess-form">
+            <label for="guess">Your Guess</label>
+            <div class="guess-submit">
+              <input type="number" id="guess-input" autocomplete="off" />
+              <button type="submit" id="btn-submit">Submit</button>
+            </div>
+          </form>
+          <div class="message"></div>
+          <div class="game-results"></div>
+          <div class="range">
+            <p id="guess-min">0</p>
+            <p id="guess-max">500</p>
+          </div>
+          <button id="restart" style="display: none">Restart</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
